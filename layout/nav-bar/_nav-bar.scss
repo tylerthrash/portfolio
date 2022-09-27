@@ -1,0 +1,41 @@
+@use 'colors' as c;
+
+.nar-bar-container {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: c.$independence;
+  color: white;
+
+  .nav-bar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #5e5e5e;
+    height: 5rem;
+  }
+
+  .nav-bar-item-container {
+    &:hover {
+      background-color: c.$black-coral;
+    }
+    padding: 0.7rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: c.$anti-flash-white;
+    min-height:7rem;
+
+    > * {
+      margin: .5rem 0;
+    }
+  }
+}

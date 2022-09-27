@@ -1,0 +1,59 @@
+$isXXSmallMaxWidth: 379px;
+
+$isXSmallMaxWidth: 599px;
+
+$isSmallMinWidth: 600px;
+$isSmallMaxWidth: 959px;
+
+$isMediumMinWidth: 960px;
+$isMediumMaxWidth: 1279px;
+
+$isLargeMinWidth: 1280px;
+$isLargeMaxWidth: 1919px;
+
+$isXLargeMinWidth: 1920px;
+
+$isShortMaxHeight: 999px;
+
+$isMediumMinHeight: 1000px;
+$isMediumMaxHeight: 1199px;
+
+$isTallMinHeight: 1200px;
+
+// $isXXSmall?: (max-width: 379px)
+
+// $isXSmall: (max-width: 599px)
+
+// $isSmall: (min-width: 600px) and (max-width: 959px)
+
+// $isMedium: (min-width: 960px) and (max-width: 1279px)
+
+// $isLarge: (min-width: 1280px) and (max-width: 1919px)
+
+// $isXLarge: (min-width: 1920px)
+
+// $isShortHeight: (max-height: 999px)
+
+// $isMediumHeight: (min-height: 1000px) and (max-height: 1199px)
+
+// $isTallHeight: (min-height: 1200px)
+
+// $isXXSmallHandset: (max-width: 379px) and (orientation: portrait) OR (max-width: 700px) and (orientation: landscape)
+
+// $isHandset: (max-width: 599px) and (orientation: portrait) OR (max-width: 959px) and (orientation: landscape)
+
+// $isTablet: (min-width: 600px) and (max-width: 839px) and (orientation: portrait) OR (min-width: 960px) and (max-width: 1279px) and (orientation: landscape)
+
+// $isDesktop: (min-width: 840px) and (orientation: portrait) OR (min-width: 1280px) and (orientation: landscape)
+
+// $isHandsetPortrait: (max-width: 599px) and (orientation: portrait)
+
+// $isTabletPortrait: (min-width: 600px) and (max-width: 839px) and (orientation: portrait)
+
+// $isDesktopPortrait: (min-width: 840px) and (orientation: portrait)
+
+// $isHandsetLandscape: (max-width: 959px) and (orientation: landscape)
+
+// $isTabletLandscape: (min-width: 960px) and (max-width: 1279px) and (orientation: landscape)
+
+// $isDesktopLandscape: (min-width: 1280px) and (orientation: landscape)

@@ -1,0 +1,67 @@
+.simple-card {
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 1.6rem 2rem;
+  background-color: hsl(33deg, 100%, 82%);
+
+  border-radius: 1.2rem;
+  padding: 1.4rem;
+
+  background: hsla(223, 11%, 84%, 1);
+  box-shadow: 0px 0px 7px 7px hsl(223deg 11% 50%),
+    inset 0 0px 2px hsl(223deg 11% 50%);
+
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.5;
+  font-weight: 400;
+  // font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+
+  .simple-card-header {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 0;
+
+    .simple-card-header-title {
+      font-size: 2.7rem;
+      font-weight: 700;
+      line-height: 1.5;
+
+      margin-bottom: 1rem;
+    }
+
+    .simple-card-header-subtitle {
+      font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+      font-weight: 500;
+    }
+  }
+
+  .simple-card-content {
+    padding: 0.8rem 0;
+
+    >* {
+      margin-top: 0;
+      margin-bottom: 1.6rem;
+    }
+
+    > :last-child() {
+      padding-bottom: 2.4rem;
+    }
+  }
+
+  .simple-card-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .simple-card-actions.center {
+    justify-content: center;
+  }
+
+  .simple-card-actions.end {
+    justify-content: flex-end;
+  }
+}

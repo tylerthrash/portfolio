@@ -1,0 +1,17 @@
+
+.title {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: normal;
+  line-height: initial;
+  word-break: break-word;
+  margin: .8rem
+}
+
+// not handsets
+@media screen and (min-width: 600px) and (orientation: portrait), (min-width: 960px) and (orientation: landscape) {
+  .title {
+    font-size: 5.7rem;
+  }
+}

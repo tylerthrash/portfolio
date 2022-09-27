@@ -1,0 +1,122 @@
+@use 'colors' as c;
+@use 'breakpoints' as bp;
+
+.skills-experience-container {
+  padding: 1.2rem;
+
+  .se-content {
+    padding: 0.4rem 1.2rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-flow: row dense;
+    justify-items: center;
+
+    grid-template-columns: 1fr;
+  }
+}
+
+.se-summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.6;
+  color: c.$raisin-black;
+
+  border-radius: 1.2rem;
+  padding: 1.4rem;
+
+  background: hsla(223, 11%, 84%, 1);
+  box-shadow: 0px 0px 7px 7px hsl(223deg 11% 50%),
+    inset 0 0px 2px hsl(223deg 11% 50%);
+
+  min-height: 27rem;
+  max-width: 70rem;
+}
+
+.se-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  min-width: 20rem;
+  max-width: 50rem;
+  width: 100%;
+
+  .se-skill {
+    margin-bottom: 1.2rem;
+
+    .se-skill-label {
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: initial;
+      margin: 0.4rem 0.2rem;
+    }
+  }
+}
+
+.skill-progress-container {
+  height: 3px;
+  border-radius: 3px;
+  background-color: c.$manatee;
+
+  .skill-progress {
+    width: 0;
+    height: 100%;
+    transition: width 1.3s ease-out;
+  }
+}
+
+.se-experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  > * {
+    background-color: hsl(33deg, 100%, 82%);
+    max-width: 70rem;
+  }
+}
+
+// non-handheld
+@media screen and (min-width: bp.$isMediumMinWidth) and (orientation: portrait),
+  (min-width: 960px) and (orientation: landscape) {
+  .skills-experience-container {
+    margin: 0 3rem;
+
+    .se-content {
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 49%));
+    }
+
+    .se-skills {
+      padding: 1rem;
+    }
+
+    .se-experience {
+      grid-column: 1/-1;
+    }
+  }
+}
+
+@media screen and (min-width: bp.$isLargeMinWidth) {
+  .skills-experience-container {
+    margin: 0 10rem;
+
+    .se-summary {
+      min-height: 15rem;
+    }
+  }
+}
+
+// very xlarge screens
+@media screen and (min-width: bp.$isXLargeMinWidth) {
+  .skills-experience-container {
+    margin: 0 25rem;
+  }
+}

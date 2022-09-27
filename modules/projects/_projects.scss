@@ -1,0 +1,66 @@
+@forward './_project-template/project-template';
+
+@use 'breakpoints' as bp;
+@use 'colors' as c;
+
+// item classes: (sm, md, lg)-project
+
+.projects-grid {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  grid-auto-flow: row dense;
+
+  .project {
+    background-color: c.$deep-champagne;
+    min-height: 300px;
+  }
+
+  @media (min-width: bp.$isMediumMinWidth) {
+    grid-template-columns: repeat(2, 1fr);
+
+    .project-sm {
+      grid-column-start: span 1;
+    }
+
+    .project-md {
+      grid-column-start: span 1;
+    }
+
+    .project-lg {
+      grid-column-start: span 2;
+    }
+  }
+
+  @media (min-width: bp.$isLargeMinWidth) {
+    grid-template-columns: repeat(3, 1fr);
+
+    .project-sm {
+      grid-column-start: span 1;
+    }
+
+    .project-md {
+      grid-column-start: span 2;
+    }
+
+    .project-lg {
+      grid-column-start: span 3;
+    }
+  }
+
+  @media (min-width: bp.$isXLargeMinWidth) {
+    grid-template-columns: repeat(3, 1fr);
+
+    .project-sm {
+      grid-column-start: span 1;
+    }
+
+    .project-md {
+      grid-column-start: span 2;
+    }
+
+    .project-lg {
+      grid-column-start: span 3;
+    }
+  }
+}

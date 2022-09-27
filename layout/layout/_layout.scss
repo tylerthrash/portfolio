@@ -1,0 +1,19 @@
+@use 'colors' as c;
+
+.tyler-thrash-portfolio-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh;
+  width: 100vw;
+
+  .layout-main-container {
+    // padding: 1rem 2rem;
+    flex: 1 1 80%;
+    // padding-top: 2rem;
+
+    background-color: c.$roman-silver;
+    overflow: auto;
+  }
+}
