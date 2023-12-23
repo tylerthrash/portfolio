@@ -1,7 +1,8 @@
-import { endOfWeek } from 'date-fns';
-import format from 'date-fns/format';
-import isToday from 'date-fns/isToday';
+
+import { format } from 'date-fns/format';
 import { isDefined } from './common.util';
+import { endOfWeek } from 'date-fns/endOfWeek';
+import { isToday } from 'date-fns/isToday';
 
 export function displayDates(
   startDate: Date,
